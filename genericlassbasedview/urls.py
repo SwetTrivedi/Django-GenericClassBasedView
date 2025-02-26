@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import path
 from school import views
 from editingview import views as v
+from createview import views as v1
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('student/',views.Studentlistview.as_view(),name='student'),
@@ -27,4 +28,7 @@ urlpatterns = [
 
     path('contact/',v.Contactformview.as_view(),name='contact'),
     path('Thankyou/',v.thanksTemplateView.as_view(),name='thank , you'),
+
+
+    path('create/',v1.Studentcreateview.as_view(),name='stucreate')
 ]

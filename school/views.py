@@ -62,4 +62,3 @@ class Studentlistview1(ListView):
 
 
 
-

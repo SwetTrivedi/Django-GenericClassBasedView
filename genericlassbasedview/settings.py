@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'school',
     'editingview',
     'createview',
+    'updateview',
+    'deleteview',
 ]
 
 MIDDLEWARE = [
